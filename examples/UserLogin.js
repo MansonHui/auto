@@ -35,8 +35,20 @@ const userLogin = async function (req, res) {
       .catch((err) => {
         console.error("Login error:", err.message);
       });
+    // if (!inputUserName) {
+    //   res.status(400).json({ msg: "Please specify your username/email" });
+    // }
+    // if (!inputPassword) {
+    //   res.status(400).json({ msg: "Please specify your password" });
+    // }
 
-    console.log("Access to user login API");
+    // let result = await TradingView.loginUser(
+    //   inputUserName,
+    //   inputPassword,
+    //   false
+    // );
+
+    // res.status(result.status);
   } catch (e) {
     console.log("Error:", e);
   }

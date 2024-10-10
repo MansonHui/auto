@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const userLogin = require("./examples/UserLogin");
+const getBuiltInIndicator = require("./examples/BuiltInIndicator");
 
 const app = express();
 const PORT = 8080;
@@ -14,6 +15,8 @@ app.get("/", function (req, res) {
 });
 
 app.post("/userLogin", userLogin);
+
+app.post("/indicator", getBuiltInIndicator);
 
 app.listen(PORT, () => {
   console.log(`Listening at http://localhost:${PORT}/`);

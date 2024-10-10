@@ -7,5 +7,3 @@ function resultfromBaddC(b, c) {
 }
 
 add(1, 5, 6);
-
-dsnkjfskdshlzfjnzsldhzslfshzldfzsldfjl;
